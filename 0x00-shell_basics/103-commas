@@ -1,2 +1,2 @@
 #!/bin/bash
-for entry in $(ls -Ap); do echo -n "$entry, "; done | sed 's/,$/\n/'
+ls -1Ap | awk '{ORS=NR%2?", ":"\n"}1'
