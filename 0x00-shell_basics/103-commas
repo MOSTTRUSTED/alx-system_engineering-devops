@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -1Ap | awk '{ORS=NR%2?", ":"\n"}1'
+ls -1ap | awk '{ORS=NR%2?", ":"\n"}1'
